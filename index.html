@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Mujawar - Chartered Accountant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fcfb; /* Very light greenish-gray background */
+            color: #2f4f4f; /* Dark slate gray text color */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e0e7e9;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #778899;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5f6e7c;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 rounded-md p-2 hover:bg-teal-50 transition duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgE_9Wr9AB3yEPL8hRih1CJx_oR16uC4B6jw&s" alt="CA Logo" class="h-10 w-15 rounded-full shadow-sm">
+                <span class="text-2xl font-bold text-teal-800">CA Mujawar</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-teal-600 font-medium transition duration-300 rounded-md p-2 hover:bg-teal-50">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-teal-600 font-medium transition duration-300 rounded-md p-2 hover:bg-teal-50">About</a>
+                <a href="#services" class="text-gray-700 hover:text-teal-600 font-medium transition duration-300 rounded-md p-2 hover:bg-teal-50">Services</a>
+                <a href="#contact" class="text-gray-700 hover:text-teal-600 font-medium transition duration-300 rounded-md p-2 hover:bg-teal-50">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-teal-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-gray-900 bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-6">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-white hover:text-gray-300 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <a href="#home" class="text-white text-3xl font-medium hover:text-teal-400 transition duration-300" onclick="hideMobileMenu()">Home</a>
+            <a href="#about" class="text-white text-3xl font-medium hover:text-teal-400 transition duration-300" onclick="hideMobileMenu()">About</a>
+            <a href="#services" class="text-white text-3xl font-medium hover:text-teal-400 transition duration-300" onclick="hideMobileMenu()">Services</a>
+            <a href="#contact" class="text-white text-3xl font-medium hover:text-teal-400 transition duration-300" onclick="hideMobileMenu()">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative bg-gradient-to-r from-teal-700 to-teal-900 text-white py-20 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/008080/FFFFFF?text=Professional+Background'); background-size: cover; background-position: center;"></div>
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                    Your Trusted Partner in Financial Excellence
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto animate-fade-in-up">
+                    CA Mujawar provides comprehensive financial and advisory services to individuals and businesses, ensuring compliance and fostering growth.
+                </p>
+                <a href="#contact" class="bg-white text-teal-600 hover:bg-teal-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 inline-block animate-bounce-once">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://www.spcoindia.com/wp-content/uploads/2020/02/CA-Career.jpg" alt="CA Mujawar" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About CA Mujawar</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-4">
+                        With a strong foundation in accounting principles and a commitment to client success, CA Mujawar offers expert guidance across a spectrum of financial services. Our practice is built on integrity, professionalism, and a deep understanding of the evolving financial landscape.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        We are dedicated to providing personalized solutions that meet the unique needs of each client, helping them navigate complex regulations, optimize financial performance, and achieve their strategic goals.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition duration-300 hover:shadow-xl hover:scale-105">
+                        <svg class="w-16 h-16 text-teal-600 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.92 12c0 2.872 1.146 5.518 3.02 7.425M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Taxation Services</h3>
+                        <p class="text-gray-600">
+                            Expert assistance with Income Tax, GST, TDS, and other direct and indirect tax compliances.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition duration-300 hover:shadow-xl hover:scale-105">
+                        <svg class="w-16 h-16 text-teal-600 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Auditing & Assurance</h3>
+                        <p class="text-gray-600">
+                            Comprehensive auditing services to ensure financial accuracy, compliance, and transparency.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition duration-300 hover:shadow-xl hover:scale-105">
+                        <svg class="w-16 h-16 text-teal-600 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.592 1L12 17.25 9.408 10.5c.512-.598 1.482-1 2.592-1z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Financial Consulting</h3>
+                        <p class="text-gray-600">
+                            Strategic financial planning, investment advisory, and business restructuring guidance.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition duration-300 hover:shadow-xl hover:scale-105">
+                        <svg class="w-16 h-16 text-teal-600 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Company Formation</h3>
+                        <p class="text-gray-600">
+                            Assistance with company registration, compliance, and secretarial services.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition duration-300 hover:shadow-xl hover:scale-105">
+                        <svg class="w-16 h-16 text-teal-600 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 100 4m-4 10a2 2 0 100 4m12-4a2 2 0 100 4m-9-4a2 2 0 100 4m-6-4h18M6 14h2m10 0h2M12 4h.01M7 10h.01M17 10h.01M12 14h.01M7 18h.01M17 18h.01"></path>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4">GST & Income Tax</h3>
+                        <p class="text-gray-600">
+                            Comprehensive Goods and Services Tax (GST) and Income Tax filing and advisory.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition duration-300 hover:shadow-xl hover:scale-105">
+                        <svg class="w-16 h-16 text-teal-600 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Bookkeeping & Accounting</h3>
+                        <p class="text-gray-600">
+                            Accurate and timely bookkeeping and accounting services for businesses of all sizes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                    <div class="md:w-1/2 bg-gray-50 rounded-xl shadow-lg p-8 text-center">
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-6">Reach Out to Us</h3>
+                        <div class="mb-6">
+                            <p class="text-gray-600 text-lg mb-2">
+                                <span class="font-semibold text-teal-600">Office Address:</span><br>
+                                CA Mujawar, Kadlas Naka, Sangola, Maharashtra 413307
+                            </p>
+                            <p class="text-gray-600 text-lg">
+                                <span class="font-semibold text-teal-600">Contact Number:</span><br>
+                                <a href="tel:+919420343786" class="text-teal-600 hover:underline">9420343786</a>
+                            </p>
+                        </div>
+                        <p class="text-gray-700 text-lg">
+                            We look forward to assisting you with your financial needs.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-white rounded-xl shadow-lg p-8">
+                            <h3 class="text-2xl font-semibold text-gray-700 mb-6">Find Us on Map</h3>
+                            <div class="rounded-lg overflow-hidden h-64 md:h-96 w-full">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5903553731587!2d75.18942857468397!3d17.43143590153561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc6a651aee134f1%3A0xa5068716e66a4178!2sCA%20Mujawar!5e0!3m2!1sen!2sin!4v1747837814343!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 CA Mujawar. All rights reserved.</p>
+            <p class="text-sm mt-2">Designed and Developed by Gufaran Mujawar</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Function to hide mobile menu when a link is clicked
+        function hideMobileMenu() {
+            mobileMenu.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
